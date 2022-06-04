@@ -15,7 +15,7 @@ class AsmaulController extends Controller
     {
         $asmaul = AsmaulHusna::orderBy('id', 'ASC')->get();
         $response = [
-            'message' => 'List Data Asmaul Berdasarkan Riwayat',
+            'message' => 'List Data Asmaul',
             'data' => $asmaul
         ];
         return response()->json($response, Response::HTTP_OK);
